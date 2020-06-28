@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>form</title>
+    </head>
+    <script type="text/javascript">
+    	function myFunction() {
+		  var firstname = document.getElementById("firstname").value;
+		  var lastname = document.getElementById("lastname").value;
+		  var age = document.getElementById("age").value;
+		  var x = document.getElementById("formdiv");
+		  var y = document.getElementById("result");
+		    x.style.display = "none";
+		    y.style.display = "block";
+		    
+		  document.getElementById("first").innerHTML = firstname;
+		  document.getElementById("last").innerHTML = lastname;
+		  document.getElementById("age1").innerHTML = age;
+		}	
+    </script>
+    <body>
+    	<div id = "formdiv" style="display: block;">
+	        <div id = "form1" >
+	            <table>
+	                <tr>
+	                    <td>First Name:</td>
+	                    <td><input id="firstname" type=text name=firstname size=10></td>
+	                </tr>
+	                <tr>
+	                    <td>Last Name:</td>
+	                    <td><input id="lastname" type=text name=lastname size=10></td>
+	                </tr>
+	                <tr>
+	                    <td>Age:</td>
+	                    <td><input id="age" type=text name=age size=10></td>
+	                </tr>
+	                <tr>
+	                    <td colspan=2><input type=submit value="Submit" onclick="myFunction()">
+	                    </td>
+	                </tr>
+	            </table>
+	        </div>
+        </div>
+        <div id = "result" style="display: none;">
+        	first name : <p id = "first"> </p>
+        	last name : <p id = "last"> </p>
+        	age :  <p id = "age1"> </p>
+        </div>
+    </body>
+</html>
